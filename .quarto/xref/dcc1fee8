@@ -1,1 +1,1 @@
-{"headings":["test-manuscripts","refferences"],"entries":[{"order":{"number":1,"section":[1,0,0,0,0,0,0]},"caption":"Exceptional figure 1 for showing off","key":"fig-stidy_design"},{"order":{"number":2,"section":[1,0,0,0,0,0,0]},"caption":"","key":"fig-mtcars"}]}
+{"headings":["test-manuscripts","refferences"],"entries":[{"key":"fig-mtcars","order":{"section":[1,0,0,0,0,0,0],"number":2},"caption":""},{"key":"fig-stidy_design","order":{"section":[1,0,0,0,0,0,0],"number":1},"caption":"Exceptional figure 1 for showing off"}]}

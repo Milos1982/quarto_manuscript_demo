@@ -25,15 +25,6 @@ format:
     toc: true
     toc-depth: 3
     number-sections: true
-  docx:
-    toc: true
-    toc-depth: 2
-    reference-doc: path/to/template.docx
-  pdf:
-    documentclass: article
-    toc: true
-    toc-depth: 2
-    number-sections: true
 ---
 
 # Test manuscripts
