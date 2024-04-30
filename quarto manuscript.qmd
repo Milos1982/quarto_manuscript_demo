@@ -1,0 +1,88 @@
+---
+title: "quarto manuscript"
+author: 
+  - name: Miloš Kalc
+    id: mk
+    orcid: 0000-0001-7002-2924
+    corresponding: TRUE
+    affiliation: 
+      - Science and Research Centre Koper, Koper, Slovenia
+      - University of Maribor, Maribor, Slovenia
+  - name: John Doe
+    orcid: 0000-0001-7002-2924
+    corresponding: FALSE
+    affiliation: "Science and Research Centre Koper, Koper, Slovenia"
+funding: "ARIS national grant J2-fdrg"
+abstract: > 
+  The characteristic theme of the works of Stone is 
+  the bridge between culture and society. ...
+keywords:
+  - Metaphysics
+  - String Theory
+bibliography: references.bib
+format:
+  html:
+    toc: true
+    toc-depth: 3
+    number-sections: true
+  docx:
+    toc: true
+    toc-depth: 2
+    reference-doc: path/to/template.docx
+  pdf:
+    documentclass: article
+    toc: true
+    toc-depth: 2
+    number-sections: true
+---
+
+# Test manuscripts
+
+This is an introduction to Quarto manuscripts.
+
+I want to show [@kalc2020][@kalc2022], @skarabot
+
+@simunicAgeRelatedSlowingContractile2018
+
+this details can be find in @fig-stidy_design
+
+Other information are depicted in @fig-mtcars
+
+![Exceptional figure 1 for showing off](images/Figure_1.png){#fig-stidy_design fig-align="center"}
+
+```{r}
+#| label: fig-mtcars
+#| echo: false
+#| message: false
+#| warning: false
+#| error: false
+library(tidyverse)
+
+mtcars |> 
+  ggplot(
+    aes(
+      x = mpg,
+      y = qsec,
+      fill = factor(cyl)
+    )
+  )+
+  geom_point(
+    col = "grey20",
+    shape = 21,
+    size = 5,
+    stroke = 1,
+    alpha = 0.8
+  )+
+  viridis::scale_fill_viridis(discrete = T)+
+  labs(
+    title = "Some data plotted on a white canvas",
+    subtitle = "Test subtitle",
+    x = "Miles per gallon",
+    y = "Some parameters",
+    caption = "Some additional information"
+  )+
+  theme_classic(base_size = 18)
+
+```
+
+# Refferences

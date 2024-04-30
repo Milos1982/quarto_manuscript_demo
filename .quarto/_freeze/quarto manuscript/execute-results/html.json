@@ -1,0 +1,17 @@
+{
+  "hash": "8af71563a5e324e5d9e9b34caa87ebc9",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"quarto manuscript\"\nauthor: \n  - name: Miloš Kalc\n    id: mk\n    orcid: 0000-0001-7002-2924\n    corresponding: TRUE\n    affiliation: \n      - Science and Research Centre Koper, Koper, Slovenia\n      - University of Maribor, Maribor, Slovenia\n  - name: John Doe\n    orcid: 0000-0001-7002-2924\n    corresponding: FALSE\n    affiliation: \"Science and Research Centre Koper, Koper, Slovenia\"\nfunding: \"ARIS national grant J2-fdrg\"\nabstract: > \n  The characteristic theme of the works of Stone is \n  the bridge between culture and society. ...\nkeywords:\n  - Metaphysics\n  - String Theory\nbibliography: references.bib\nformat:\n  html:\n    toc: true\n    toc-depth: 3\n    number-sections: true\n  docx:\n    toc: true\n    toc-depth: 2\n    reference-doc: path/to/template.docx\n  pdf:\n    documentclass: article\n    toc: true\n    toc-depth: 2\n    number-sections: true\n---\n\n\n# Test manuscripts\n\nThis is an introduction to Quarto manuscripts.\n\nI want to show [@kalc2020][@kalc2022], @skarabot\n\n@simunicAgeRelatedSlowingContractile2018\n\nthis details can be find in @fig-stidy_design\n\nOther information are depicted in @fig-mtcars\n\n![Exceptional figure 1 for showing off](images/Figure_1.png){#fig-stidy_design fig-align=\"center\"}\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](quarto-manuscript_files/figure-html/fig-mtcars-1.png){#fig-mtcars width=672}\n:::\n:::\n\n\n# Refferences\n",
+    "supporting": [
+      "quarto-manuscript_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
